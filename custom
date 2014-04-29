@@ -1,14 +1,14 @@
 ;; sawfish user customization -- do not edit by hand!
-;; sawfish version 1.5.3, written Tue Apr 29 11:46:53 2014
+;; sawfish version 1.5.3, written Tue Apr 29 14:57:37 2014
 
+(custom-set-typed-variable (quote focus-ignore-pointer-events) (quote ()) (quote boolean))
+(custom-set-typed-variable (quote focus-mode) (quote enter-exit) (quote symbol))
 (custom-set-keymap (quote global-keymap) (quote (keymap (cycle-windows . "W-TAB") (customize . "M-F1") (next-workspace . "W-Right") (previous-workspace . "W-Left"))))
 (custom-set-keymap (quote window-keymap) (quote (keymap (tab-raise-right-window . "H-ISO_Left_Tab") (size-window-add-column . "M-S-Right") (size-window-subtract-column . "M-S-Left") (size-window-subtract-row . "M-S-Up") (size-window-add-row . "M-S-Down") (tab-raise-left-window . "W-ISO_Left_Tab") (raise-and-pass-through-click . "Button1-Click") (move-window-interactively . "W-Button1-Move") (popup-window-menu . "W-Button2-Click") (raise-lower-window . "W-Button3-Click") (lower-window . "W-Down") (raise-window . "W-Up"))))
 (custom-set-typed-variable (quote move-show-position) (quote ()) (quote boolean))
 (custom-set-typed-variable (quote move-resize-raise-window) (quote t) (quote boolean))
 (custom-set-typed-variable (quote play-sample-program) (quote ()) (quote (optional program)))
 (custom-set-typed-variable (quote audio-events-enabled) (quote ()) (quote boolean) (quote sawfish.wm.ext.audio-events))
-(custom-set-typed-variable (quote workspace-send-boundary-mode) (quote stop) (quote (choice stop wrap-around keep-going)))
-(custom-set-typed-variable (quote workspace-boundary-mode) (quote stop) (quote (choice stop wrap-around keep-going)))
 (custom-set-typed-variable (quote viewport-boundary-mode) (quote wrap-around) (quote (choice wrap-around stop)))
 (custom-set-typed-variable (quote viewport-dimensions) (quote (1 . 1)) (quote (pair (number 1) (number 1))))
 (custom-set-typed-variable (quote workspace-names) (quote ("workspace-1" "workspace-2" "workspace-3" "workspace-4")) (quote (list string "Workspace names")))
