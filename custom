@@ -1,10 +1,14 @@
 ;; sawfish user customization -- do not edit by hand!
-;; sawfish version 1.5.3, written Tue Apr 29 15:02:04 2014
+;; sawfish version 1.5.3, written Tue Apr 29 15:26:18 2014
 
+(custom-set-keymap (quote cycle-keymap) (quote (keymap)))
+(custom-set-keymap (quote global-keymap) (quote (keymap (cycle-windows . "W-TAB") (move-cursor-up . "Super-C-Up") (move-cursor-down . "Super-C-Down") (move-cursor-right . "Super-C-Right") (move-cursor-left . "Super-C-Left") (customize . "M-F1") (next-workspace . "W-Right") (previous-workspace . "W-Left"))))
+(custom-set-keymap (quote window-keymap) (quote (keymap (tab-raise-right-window . "H-ISO_Left_Tab") (size-window-add-column . "M-S-Right") (size-window-subtract-column . "M-S-Left") (size-window-subtract-row . "M-S-Up") (size-window-add-row . "M-S-Down") (tab-raise-left-window . "W-ISO_Left_Tab") (raise-and-pass-through-click . "Button1-Click") (move-window-interactively . "W-Button1-Move") (popup-window-menu . "W-Button2-Click") (raise-lower-window . "W-Button3-Click") (lower-window . "W-Down") (raise-window . "W-Up"))))
+(custom-set-typed-variable (quote ugly-cycle-relative) (quote screen) (quote symbol))
+(custom-set-typed-variable (quote ugly-cycle-show-windows) (quote t) (quote boolean))
+(custom-set-typed-variable (quote ugly-cycle-show-icons) (quote t) (quote boolean))
 (custom-set-typed-variable (quote focus-mode) (quote enter-only) (quote symbol))
 (custom-set-typed-variable (quote focus-ignore-pointer-events) (quote ()) (quote boolean))
-(custom-set-keymap (quote global-keymap) (quote (keymap (cycle-windows . "W-TAB") (customize . "M-F1") (next-workspace . "W-Right") (previous-workspace . "W-Left"))))
-(custom-set-keymap (quote window-keymap) (quote (keymap (tab-raise-right-window . "H-ISO_Left_Tab") (size-window-add-column . "M-S-Right") (size-window-subtract-column . "M-S-Left") (size-window-subtract-row . "M-S-Up") (size-window-add-row . "M-S-Down") (tab-raise-left-window . "W-ISO_Left_Tab") (raise-and-pass-through-click . "Button1-Click") (move-window-interactively . "W-Button1-Move") (popup-window-menu . "W-Button2-Click") (raise-lower-window . "W-Button3-Click") (lower-window . "W-Down") (raise-window . "W-Up"))))
 (custom-set-typed-variable (quote move-show-position) (quote ()) (quote boolean))
 (custom-set-typed-variable (quote move-resize-raise-window) (quote t) (quote boolean))
 (custom-set-typed-variable (quote play-sample-program) (quote ()) (quote (optional program)))
