@@ -1,13 +1,17 @@
 ;; sawfish user customization -- do not edit by hand!
-;; sawfish version 1.5.3, written Tue Apr 29 15:30:40 2014
+;; sawfish version 1.5.3, written Sat May  3 23:36:31 2014
 
+(custom-set-typed-variable (quote place-window-mode) (quote best-fit) (quote symbol))
+(custom-set-typed-variable (quote default-frame-style) (quote microGUI) (quote frame-style))
+(custom-set-keymap (quote global-keymap) (quote (keymap (cycle-windows . "W-TAB") ((run-shell-command "fbpanel") . "M-F3") ((run-shell-command "fbrun") . "W-F2") (move-cursor-up . "Super-C-Up") (move-cursor-down . "Super-C-Down") (move-cursor-right . "Super-C-Right") (move-cursor-left . "Super-C-Left") (customize . "M-F1") (next-workspace . "W-Right") (previous-workspace . "W-Left"))))
+(custom-set-typed-variable (quote workspace-names) (quote ("workspace-1" "workspace-2" "workspace-3" "workspace-4" "workspace-5")) (quote (list string "Workspace names")))
+(custom-set-keymap (quote title-keymap) (quote (keymap (tab-add-to-group . "Button2-Off") (move-window-interactively . "Button1-Move") (toggle-window-shaded . "Button1-Off2") (resize-window-interactively . "Button2-Move") (toggle-window-sticky . "Button3-Off"))))
+(custom-set-typed-variable (quote focus-mode) (quote enter-exit) (quote symbol))
 (custom-set-keymap (quote window-keymap) (quote (keymap (tab-raise-right-window . "H-ISO_Left_Tab") (slide-window-down . "Super-M-Down") (slide-window-up . "Super-M-Up") (slide-group-right . "Super-M-Right") (slide-window-left . "Super-M-Left") (size-window-add-column . "M-S-Right") (size-window-subtract-column . "M-S-Left") (size-window-subtract-row . "M-S-Up") (size-window-add-row . "M-S-Down") (tab-raise-left-window . "W-ISO_Left_Tab") (raise-and-pass-through-click . "Button1-Click") (move-window-interactively . "W-Button1-Move") (popup-window-menu . "W-Button2-Click") (raise-lower-window . "W-Button3-Click") (lower-window . "W-Down") (raise-window . "W-Up"))))
 (custom-set-keymap (quote cycle-keymap) (quote (keymap)))
-(custom-set-keymap (quote global-keymap) (quote (keymap (cycle-windows . "W-TAB") (move-cursor-up . "Super-C-Up") (move-cursor-down . "Super-C-Down") (move-cursor-right . "Super-C-Right") (move-cursor-left . "Super-C-Left") (customize . "M-F1") (next-workspace . "W-Right") (previous-workspace . "W-Left"))))
 (custom-set-typed-variable (quote ugly-cycle-relative) (quote screen) (quote symbol))
 (custom-set-typed-variable (quote ugly-cycle-show-windows) (quote t) (quote boolean))
 (custom-set-typed-variable (quote ugly-cycle-show-icons) (quote t) (quote boolean))
-(custom-set-typed-variable (quote focus-mode) (quote enter-only) (quote symbol))
 (custom-set-typed-variable (quote focus-ignore-pointer-events) (quote ()) (quote boolean))
 (custom-set-typed-variable (quote move-show-position) (quote ()) (quote boolean))
 (custom-set-typed-variable (quote move-resize-raise-window) (quote t) (quote boolean))
@@ -15,9 +19,7 @@
 (custom-set-typed-variable (quote audio-events-enabled) (quote ()) (quote boolean) (quote sawfish.wm.ext.audio-events))
 (custom-set-typed-variable (quote viewport-boundary-mode) (quote wrap-around) (quote (choice wrap-around stop)))
 (custom-set-typed-variable (quote viewport-dimensions) (quote (1 . 1)) (quote (pair (number 1) (number 1))))
-(custom-set-typed-variable (quote workspace-names) (quote ("workspace-1" "workspace-2" "workspace-3" "workspace-4")) (quote (list string "Workspace names")))
 (custom-set-typed-variable (quote tooltips-show-doc-strings) (quote ()) (quote boolean))
 (custom-set-typed-variable (quote tooltips-enabled) (quote t) (quote boolean) (quote sawfish.wm.ext.tooltips))
 (custom-set-typed-variable (quote resize-outline-mode) (quote box) (quote (choice opaque box cross elliptical draft)))
 (custom-set-typed-variable (quote move-outline-mode) (quote opaque) (quote (choice opaque box cross elliptical draft)))
-(custom-set-typed-variable (quote default-frame-style) (quote microGUI) (quote frame-style))
