@@ -1,9 +1,9 @@
 ;; sawfish user customization -- do not edit by hand!
-;; sawfish version 1.5.3, written Sat May  3 23:36:31 2014
+;; sawfish version 1.5.3, written Tue May  6 09:15:05 2014
 
-(custom-set-typed-variable (quote place-window-mode) (quote best-fit) (quote symbol))
 (custom-set-typed-variable (quote default-frame-style) (quote microGUI) (quote frame-style))
-(custom-set-keymap (quote global-keymap) (quote (keymap (cycle-windows . "W-TAB") ((run-shell-command "fbpanel") . "M-F3") ((run-shell-command "fbrun") . "W-F2") (move-cursor-up . "Super-C-Up") (move-cursor-down . "Super-C-Down") (move-cursor-right . "Super-C-Right") (move-cursor-left . "Super-C-Left") (customize . "M-F1") (next-workspace . "W-Right") (previous-workspace . "W-Left"))))
+(custom-set-keymap (quote global-keymap) (quote (keymap (cycle-windows . "W-TAB") (iswitch-window . "M-`") ((run-shell-command "fbpanel") . "M-F3") ((run-shell-command "fbrun") . "W-F2") (move-cursor-up . "Super-C-Up") (move-cursor-down . "Super-C-Down") (move-cursor-right . "Super-C-Right") (move-cursor-left . "Super-C-Left") (customize . "M-F1") (next-workspace . "W-Right") (previous-workspace . "W-Left"))))
+(custom-set-typed-variable (quote place-window-mode) (quote best-fit) (quote symbol))
 (custom-set-typed-variable (quote workspace-names) (quote ("workspace-1" "workspace-2" "workspace-3" "workspace-4" "workspace-5")) (quote (list string "Workspace names")))
 (custom-set-keymap (quote title-keymap) (quote (keymap (tab-add-to-group . "Button2-Off") (move-window-interactively . "Button1-Move") (toggle-window-shaded . "Button1-Off2") (resize-window-interactively . "Button2-Move") (toggle-window-sticky . "Button3-Off"))))
 (custom-set-typed-variable (quote focus-mode) (quote enter-exit) (quote symbol))
